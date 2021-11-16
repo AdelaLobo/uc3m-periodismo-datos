@@ -1,4 +1,4 @@
-# PRACTICA 2: ANÁLISIS CRÍTICO DE UNA VISUALIZACIÓN DE DATOS
+# Práctica 2: Análisisi crítico de una visualización de datos
 
 Esta [gráfica](http://ix.io/3F9Y) representa la **evolución de la intención de voto de los madrileños** para las próximas elecciones autonómicas.
 
