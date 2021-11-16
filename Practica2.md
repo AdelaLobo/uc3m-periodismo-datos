@@ -1,10 +1,10 @@
 # PRACTICA 2: ANÁLISIS CRÍTICO DE UNA VISUALIZACIÓN DE DATOS
 
-Para acceder a ella consulte el siguiente enlace: https://www.datawrapper.de/_/6Iyz1/
+Esta [gráfica](http://ix.io/3F9Y) representa la **evolución de la intención de voto de los madrileños** para las próximas elecciones autonómicas.
 
 ## Descripción de la visualización de datos
 
-Esta gráfica representa la **evolución de la intención de voto de los madrileños** para las próximas elecciones autonómicas. Los datos que aparecen en la visualización se encuentran fechados entre el 10 de marzo y el 15 de abril de este año. Las líneas representan el promedio de la intención de voto y los puntos, encuestas individuales de diferentes sondeos, como los de *Electopanel* o *Sigma Dos*. Por otra parte, las variables de la gráfica son:
+Los datos que aparecen en la visualización se encuentran fechados entre el 10 de marzo y el 15 de abril de este año. Las líneas representan el promedio de la intención de voto y los puntos, encuestas individuales de diferentes sondeos, como los de *Electopanel* o *Sigma Dos*. Por otra parte, las variables de la gráfica son:
 1. El porcentaje de votos que obtendría determinado partido.
 2. La fecha en la que obtendrían ese resultado.
 
