@@ -1,6 +1,6 @@
 # Práctica 3: Gráfico con *Datawrapper*
 ## Justificación del tema
-Como tema para realizar el gráfico he elegido **la evolución del volumen de tweets que deseaban una feliz Navidad**. El objetivo de esto era observar cuándo empiezan y terminan las felicitaciones. Es curioso comprobar que los usuarios de Twitter comienzan a desear una feliz Navidad en noviembre. Como vemos, hay quien considera que el periodo navideño comienza cuando termina Halloween. Evidentemente, a finales de diciembre es cuando el volumen de tweets se dispara.
+Este [gráfico](https://datawrapper.dwcdn.net/cO2Dk/1/) de elaboración propia representa **la evolución del volumen de tweets que deseaban una feliz Navidad**. El objetivo de esto era observar cuándo empiezan y terminan las felicitaciones. Es curioso comprobar que los usuarios de Twitter comienzan a desear una feliz Navidad en noviembre. Como vemos, hay quien considera que el periodo navideño comienza cuando termina Halloween. Evidentemente, a finales de diciembre es cuando el volumen de tweets se dispara.
 ## Proceso de elaboración
 Lo primero que he hecho es transformar la columna de las fechas para que *OpenRefine* las considerara como tal. He realizado el mismo proceso con la columna numérica. Por otra parte, he eliminado los datos de 1970 como vimos en clase. Luego he abierto una faceta de texto y he eliminado todas las tendencias que no estuvieran relacionadas con la navidad. De tal manera que las únicas tendencias que he considerado son:
 - Feliz Navidad
