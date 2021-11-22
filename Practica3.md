@@ -1,4 +1,6 @@
 # Práctica 3: Gráfico con *Datawrapper*
+![cO2Dk-tweets-felicitando-la-navidad-2020-](https://user-images.githubusercontent.com/90263735/142870971-a43dcce7-f265-469c-9489-5eca86f4be90.png)
+
 ## Justificación del tema
 Este [gráfico](https://datawrapper.dwcdn.net/cO2Dk/1/) de elaboración propia representa **la evolución del volumen de tweets que deseaban una feliz Navidad**. El objetivo de esto era observar cuándo empiezan y terminan las felicitaciones. Es curioso comprobar que los usuarios de Twitter comienzan a desear una feliz Navidad en noviembre. Como vemos, hay quien considera que el periodo navideño comienza cuando termina Halloween. Evidentemente, a finales de diciembre es cuando el volumen de tweets se dispara.
 ## Proceso de elaboración
