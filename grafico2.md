@@ -9,7 +9,7 @@ Para consultar la visualización interactiva, haga clic en este [enlace](https:/
 
 Esta base de datos muestra cada uno de los accidentes de tráfico con implicación de bicicletas en 2018. Cada incidente está detallado con datos de las circunstancias en las que se produjo el accidente, como en qué calle se produjo, la hora, si había granizo en la carretera… 
 
-Como solo nos interesa el distrito, eliminamos todas las columnas y nos quedamos con esta. Ahora, para saber el número exacto de accidentes que ha habido en cada distrito, selecciono la opción **Edit Column** y después **Add column based on this column**. Una vez realizado esto, introduzco **value.facetCount(‘value’,’Distrito’)**. El nombre de la nueva columna es Nº accidentes. 
+Como solo nos interesa el distrito, elimino todas las columnas y me quedo únicamente con la columna de los distritos. Ahora, para saber el número exacto de accidentes que ha habido en cada distrito, selecciono la opción **Edit Column** y después **Add column based on this column**. Una vez realizado esto, introduzco **value.facetCount(‘value’,’Distrito’)**. El nombre de la nueva columna es Nº accidentes. 
 
 De esta manera, obtengo el número de veces que se repite cada distrito en la base de datos que es el equivalente al número de accidentes que se produjeron en el año 2018 en dicho distrito.
 
