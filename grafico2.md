@@ -3,7 +3,7 @@ Esta visualización se ha realizado con una base de datos diferente a la propues
 
 Para consultar la visualización interactiva, haga clic en este [enlace](https://datawrapper.dwcdn.net/8z5IG/2/).
 
-![8z5IG-accidentes-de-tr-fico-que-implican-a-una-bicicleta-en-madrid-nbsp-](https://user-images.githubusercontent.com/90263735/143495808-b66b4258-cfdb-470c-873b-fbb51587ec8e.png)
+![grafico](/imagenes/mapaaccidentes.png "mapa con los accidentes con implicación de bicicleta")
 
 ## Proceso de limpieza de datos en *OpenRefine*
 
