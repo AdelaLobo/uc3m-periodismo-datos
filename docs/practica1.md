@@ -1,8 +1,7 @@
 # INFOGRAFÍA 1
 
-https://boyaca7dias.com.co/wp-content/uploads/2021/07/Afganista%CC%81n_re%CC%81cord_de_vi%CC%81ctimas_civiles_tras_el_inicio_de_la_retirada-1486x1536.jpg
 
-Esta infografía representa la situación en Afganistán tras la ocupación de los talibanes. Cconsta de cuatro gráficos.
+Esta [infografía](https://boyaca7dias.com.co/wp-content/uploads/2021/07/Afganista%CC%81n_re%CC%81cord_de_vi%CC%81ctimas_civiles_tras_el_inicio_de_la_retirada-1486x1536.jpg) representa la situación en Afganistán tras la ocupación de los talibanes. Consta de cuatro gráficos.
 
 1. **Gráfico de barras.** Muestra cronológicamente las cifras de muertos y heridos en conflictos de Afganistán desde 2009 hasta 2021.
 

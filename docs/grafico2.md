@@ -3,7 +3,7 @@ Esta visualización se ha realizado con una base de datos diferente a la propues
 
 Para consultar la visualización interactiva, haga clic en este [enlace](https://datawrapper.dwcdn.net/8z5IG/2/).
 
-![grafico](/imagenes/mapaaccidentes.png "mapa con los accidentes con implicación de bicicleta")
+![grafico](/docs/imagenes/mapaaccidentes.png "mapa con los accidentes con implicación de bicicleta")
 
 ## Proceso de limpieza de datos en *OpenRefine*
 
