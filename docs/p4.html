@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="es" class="h-100">
+<!-- Cambio el idioma de en a es -->
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Adela Lobo Sansegundo">
+    <meta name="generator" content="nano">
+    <title>Trabajo final de periodismo de datos</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/sticky-footer-navbar/">
+
+    
+
+    <!-- Bootstrap core CSS, la hoja de estilo básica de bootstrap, la he puesto en la carpeta css-->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="css/sticky-footer-navbar.css" rel="stylesheet">
+  </head>
+  <body class="d-flex flex-column h-100">
+    
+<header>
+  <!-- Fixed navbar -->
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Adela Lobo</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="p1.html">Práctica 1</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="p2.html">Práctica 2</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="p3.html">Práctica 3</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="p4.html">Práctica 4</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<!-- Begin page content -->
+<main class="flex-shrink-0">
+  <div class="container">
+<h1 id="realización-de-una-visualización-en-datawrapper">Realización de una visualización en <em>Datawrapper</em></h1>
+<p>Esta visualización se ha realizado con una base de datos diferente a la propuesta por el profesor. Se puede consultar dicha dataset en este <a href="https://datos.gob.es/es/catalogo/l01280796-accidentes-de-trafico-con-implicacion-de-bicicletas">enlace</a>. El objetivo de la visualización que he elaborado es localizar geográficamente dónde se producen más accidentes con bicicletas.</p>
+<p>Para consultar la visualización interactiva, haga clic en este <a href="https://datawrapper.dwcdn.net/8z5IG/2/">enlace</a>.</p>
+<figure>
+<img src="imagenes/mapaaccidentes.png" title="mapa con los accidentes con implicación de bicicleta" alt="grafico" /><figcaption aria-hidden="true">grafico</figcaption>
+</figure>
+<h2 id="proceso-de-limpieza-de-datos-en-openrefine">Proceso de limpieza de datos en <em>OpenRefine</em></h2>
+<p>Esta base de datos muestra cada uno de los accidentes de tráfico con implicación de bicicletas en 2018. Cada incidente está detallado con datos de las circunstancias en las que se produjo el accidente, como en qué calle se produjo, la hora, si había granizo en la carretera…</p>
+<p>Como solo nos interesa el distrito, elimino todas las columnas y me quedo únicamente con la columna de los distritos. Ahora, para saber el número exacto de accidentes que ha habido en cada distrito, selecciono la opción <strong>Edit Column</strong> y después <strong>Add column based on this column</strong>. Una vez realizado esto, introduzco <strong>value.facetCount(‘value’,’Distrito’)</strong>. El nombre de la nueva columna es Nº accidentes.</p>
+<p>De esta manera, obtengo el número de veces que se repite cada distrito en la base de datos que es el equivalente al número de accidentes que se produjeron en el año 2018 en dicho distrito.</p>
+<p>Ahora solo me enfrento a dos columnas y pero todavía tengo 700 filas. Observo que la gran mayoría de filas muestran los mismos datos. Por ejemplo, Centro, 124. Este dato aparece repetido 124 veces y solo me interesa una fila. Por ello, elimino todas las filas que muestran los mismos datos. Mi objetivo es quedarme con 21 filas, una por distrito. Para ello, selecciono <strong>Edit rows</strong> y <strong>Star Row</strong> para marcar todas las filas. Manualmente, desmarco una fila por distrito y luego selecciono <strong>Remove matching rows</strong></p>
+<h2 id="procesar-los-datos-en-datawrapper">Procesar los datos en <em>Datawrapper</em></h2>
+<p>Ya tengo los datos limpiados. Ahora toca procesarlos en <em>Datawrapper</em>. Para realizar esto, selecciono la opción para diseñar un mapa y después elijo la zona geográfica que quiero, en este caso, la ciudad de Madrid dividida en distritos.</p>
+<p>El programa no entiende algunos términos por lo que toca modificarlos manualmente desde <em>Datawrapper</em>. En el dataset, Chamberí carecía de tilde, así que la añado. Realizo lo mismo con el resto de palabras a las que les faltaba la vírgula. También cambio el término Moncloa-Aravaca, por simplemente Moncloa ya que el mapa reconoce esta ubicación de esta manera y desconoce el otro término.</p>
+<p>Tras terminar estos cambios, el mapa ya muestra los datos correctamente. Con esto, ya esta concluida la visualización.</p>
+<h2 id="comentario-de-la-visualización-obtenida">Comentario de la visualización obtenida</h2>
+<p>Gracias a este mapa se puede visualizar el número de accidentes de tráfico con implicación de una bicicleta en las diferentes zonas de Madrid con tan solo un golpe de vista.</p>
+<p>La elección del azul es acertada ya que, según la teoría del color, el azul evoca seriedad y confianza, que es lo que un medio quiere transmitir a sus lectores.</p>
+<p>Según la tonalidad de azul más oscuro o más clara podemos deducir si el número de accidentes es elevado o alto, respectivamente. El mapa muesta el distrito centro muy oscuro y los distritos del sur más claros. Esto probablemente se deba a que la circulación de bicicletas por el centro de la ciudad es más elevada que en la periferia, lo que produce más accidentes con este medio de transporte.</p>
+<p>El mayor problema de visualización que presenta este mapa es la extrema claridad de las zonas con poco accidentes. Estas zonas corresponden con los distritos Usera, Villaverde, Vallecas, Vicálvaro y Moratalaz. El color aquí es tan blanco que da la sensación de que en estas zonas no hay accidentes cuando realmente no es así.</p>
+  </div>
+</main>
+
+<footer class="footer mt-auto py-3 bg-light">
+  <div class="container">
+    <span class="text-muted">Place sticky footer content here.</span>
+  </div>
+</footer>
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+      
+  </body>
+</html>

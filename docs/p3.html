@@ -52,16 +52,16 @@
             <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="practica1.html">Práctica 1</a>
+            <a class="nav-link" href="p1.html">Práctica 1</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="practica2.html">Práctica 2</a>
+            <a class="nav-link" href="p2.html">Práctica 2</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="practica3.html">Práctica 3</a>
+            <a class="nav-link" href="p3.html">Práctica 3</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="practica4.html">Práctica 4</a>
+            <a class="nav-link" href="p4.html">Práctica 4</a>
           </li>
         </ul>
         <form class="d-flex">
@@ -76,6 +76,19 @@
 <!-- Begin page content -->
 <main class="flex-shrink-0">
   <div class="container">
+<h1 id="práctica-3-gráfico-con-datawrapper">Práctica 3: Gráfico con <em>Datawrapper</em></h1>
+<figure>
+<img src="imagenes/feliz.png" title="gráfico tweets feliz navidad" alt="grafico" /><figcaption aria-hidden="true">grafico</figcaption>
+</figure>
+<h2 id="justificación-del-tema">Justificación del tema</h2>
+<p>Este <a href="https://datawrapper.dwcdn.net/cO2Dk/1/">gráfico</a> de elaboración propia representa <strong>la evolución del volumen de tweets que deseaban una feliz Navidad</strong>. El objetivo de esto era observar cuándo empiezan y terminan las felicitaciones. Es curioso comprobar que los usuarios de Twitter comienzan a desear una feliz Navidad en noviembre. Como vemos, hay quien considera que el periodo navideño comienza cuando termina Halloween. Evidentemente, a finales de diciembre es cuando el volumen de tweets se dispara. ## Proceso de elaboración</p>
+<p>Lo primero que he hecho es transformar la columna de las fechas para que <em>OpenRefine</em> las considerara como tal. He realizado el mismo proceso con la columna numérica. También he eliminado las columnas de las urls. Por otra parte, he eliminado los datos de 1970 como vimos en clase. Luego he abierto una faceta de texto y he eliminado todas las tendencias que no estuvieran relacionadas con la navidad. De tal manera que las únicas tendencias que he considerado son:</p>
+<ul>
+<li>Feliz Navidad</li>
+<li>Feliz Día de Navidad</li>
+<li>Feliz y Santa Navidad</li>
+</ul>
+<p>Al ordenar las fechas me he dado cuenta de que el volumen de tweets del 24 y 25 de noviembre eran desproporcionados. Al parecer, los datos de noviembre aparecerían como si correspondiesen a diciembre en el archivo. Ese ha sido el principal problema que me he encontrado a la hora de realizar este trabajo. Para solucionarlo, cambié manualmente esos datos para que se consideraran como valores de diciembre. Por último, exporté los datos a un <strong>.csv</strong> y empecé a trabajar con <em>Datawrapper</em>. Una vez ahí, inserté el título y las notas correspondientes para que cualquier persona que acceda al gráfico pueda entender la información que se le presenta.</p>
   </div>
 </main>
 
