@@ -1,0 +1,51 @@
+<h1 id="metodología">Metodología</h1>
+<p>Estamos a punto de acabar el cursos y, por tanto, voy a recopilar todo el trabajo de este cuatrimestre en este página web. Para ello, voy a necesitar crear la carpeta docs, ya que github me creará la web con todo el contenido que aparezca ahí. Es tan fácil como introducir en la terminal <strong>mkdir docs</strong>. Como también voy a necesitar otras dos carpetas para los archivos css y js, repito el proceso anterior. Introduco <strong>mkdir css</strong> y <strong>mkdir js</strong></p>
+<p>Ya tengo cuatro archivos en markdown y cada uno corresponde a una práctica del curso. Para insertarlos en una página web debo pasarlos a html. Este paso es bien sencillo, tan solo debo introducir en la terminal la siguiente fórmula: <strong>pandoc ruta/archivo.md ruta/nuevoarchivo.html</strong>. En mi caso, puse esto en la terminal:</p>
+<ul>
+<li>pandoc uc3m-periodismo-datos/docs/practica1.md uc3m-periodismo-datos/docs/practica1.html</li>
+<li>pandoc uc3m-periodismo-datos/docs/Practica2.md uc3m-periodismo-datos/docs/practica2.html</li>
+<li>pandoc uc3m-periodismo-datos/docs/Practica3.md uc3m-periodismo-datos/docs/practica3.html</li>
+<li>pandoc uc3m-periodismo-datos/docs/Grafico2.md uc3m-periodismo-datos/docs/practica4.html</li>
+</ul>
+<p>Ya tengo todos los archivos en html. Ahora falta crear una web para insertarlos. Por ello, descargo una plantilla html de <strong>Bootstrap</strong>. En su web, en la pestaña <em>Examples</em>, clico en <em>Download examples</em> y me descargo las plantillas.</p>
+<p>Para acceder al index de la plantilla stiky footer navbar introduzco en la terminal cd /Downloads/bootstrap-5.1.3-examples/bootstrap-5.1.3-examples/sticky-footer-navbar. Ahora puedo modificar el archivo index.html con nano. Pero como no me interesa tenerlo en esta carpeta lo muevo a la carpeta docs de mi directorio con mv. También muevo a la carpeta css los archivos bootstrap.min.css y sticky-footer-navbar.css. Realizo el mismo proceso para mover a la carpeta js bootstrap.bundle.min.js.</p>
+<p>Listo, ya tengo todo lo necesario para empezar a modificar el index. Aquí voy a tener que cambiar algunas rutas para que el diseño de la web sea atractivo.´Cambio dos rutas de la cabecera del index en las que aparece un archivo css. De tal manera que las rutas modificadas quedarían así:</p>
+<p><strong><link href="css/bootstrap.min.css" rel="stylesheet"></strong></p>
+<pre><code>**&lt;link href=&quot;css/sticky-footer-navbar.css&quot; rel=&quot;stylesheet&quot;&gt;**</code></pre>
+<p>En el pie del index debo cambiar la ruta de otro archivo js. El resultado de la nueva ruta sería el siguiente:</p>
+<pre><code>**&lt;link href=&quot;css/sticky-footer-navbar.css&quot; rel=&quot;stylesheet&quot;&gt;**</code></pre>
+<p>Lo siguiente es conseguir una cabecera y un pie por separado. Para ello edito el index desde nano y con ctrl+k elimino todas las líneas hasta quedarme solo con el código correspondiente, que en este caso son las primeras 71 y guardo el archivo como cabecera.html. Vuelvo abrir el index y con el mismo atajo me quedo con las últimas 15 líneas y lo guardo como pie.html.</p>
+<p>Como quiero que desde la parte superior el usuario se pueda dirigir a las diferentes prácticas, modifico la cabecera y el index de esta manera:</p>
+<pre><code>&lt;li class=&quot;nav-item&quot;&gt;
+        &lt;a class=&quot;nav-link&quot; href=&quot;index.html&quot;&gt;Inicio&lt;/a&gt;
+      &lt;/li&gt;
+      &lt;li class=&quot;nav-item&quot;&gt;
+&lt;li class=&quot;nav-item&quot;&gt;
+        &lt;a class=&quot;nav-link&quot; href=&quot;nuevapractica1.html&quot;&gt;Práctica 1&lt;/a&gt;
+      &lt;/li&gt;
+      &lt;li class=&quot;nav-item&quot;&gt;
+&lt;li class=&quot;nav-item&quot;&gt;
+        &lt;a class=&quot;nav-link&quot; href=&quot;nuevapractica2.html&quot;&gt;Práctica 2&lt;/a&gt;
+      &lt;/li&gt;
+      &lt;li class=&quot;nav-item&quot;&gt;
+&lt;li class=&quot;nav-item&quot;&gt;
+        &lt;a class=&quot;nav-link&quot; href=&quot;nuevapractica3.html&quot;&gt;Práctica 3&lt;/a&gt;
+      &lt;/li&gt;
+      &lt;li class=&quot;nav-item&quot;&gt;  
+&lt;li class=&quot;nav-item&quot;&gt;
+        &lt;a class=&quot;nav-link&quot; href=&quot;nuevapractica4.html&quot;&gt;Práctica 4&lt;/a&gt;
+     &lt;/li&gt;
+       &lt;li class=&quot;nav-item&quot;&gt;
+ &lt;li class=&quot;nav-item&quot;&gt;
+         &lt;a class=&quot;nav-link&quot; href=&quot;nuevametodologia.html&quot;&gt;Metodología&lt;/a&gt;</code></pre>
+<p>También edito la línea 44 para que se vea mi nombre en lugar de Fixed Navbar <a class="navbar-brand" href="#">Adela Lobo</a></p>
+<p>En el pie, modifico la línea 6 para introducir un nuevo texto. En este caso yo pondré <em>Periodismo de datos</em>. Quedaría de esta manera: <span class="text-muted">Periodismo de datos</span></p>
+<p>Para que la cabecera y el pie estén presentes durante toda la navegación debo concatenar. Para ello introduzco lo siguiente en la terminal:</p>
+<ul>
+<li>cat cabecera.html practica1.html pie.html &gt; nuevapractica1.html</li>
+<li>cat cabecera.html practica2.html pie.html &gt; nuevapractica2.html</li>
+<li>cat cabecera.html practica3.html pie.html &gt; nuevapractica3.html</li>
+<li>cat cabecera.html practica4.html pie.html &gt; nuevapractica4.html</li>
+</ul>
+<p>Para que la página inicial tenga algo de texto, creo un nuevo archivo, al que he llamado inicio.md. En él, explico el contenido de la página web. Una vez terminado el texto lo paso a html con pandoc. Y copio y pego el contenido del nuevo archivo html en el index a partir del container.</p>
+<p>Ya solo me queda la metodología. Cuando termine de redactarla en markdown, le pasaré pandoc y con el comando cat uniré ese archivo con la cabecera y el pie. Guardaré este archivo como nuevametodología.html, que es la referencia que había introducido en la cabecera.</p>

@@ -25,6 +25,46 @@ En el pie del index debo cambiar la ruta de otro archivo js. El resultado de la 
 
     **<link href="css/sticky-footer-navbar.css" rel="stylesheet">**
 
+Lo siguiente es conseguir una cabecera y un pie por separado. Para ello edito el index desde nano y con ctrl+k elimino todas las líneas hasta quedarme solo con el código correspondiente, que en este caso son las primeras 71 y guardo el archivo como cabecera.html. Vuelvo abrir el index y con el mismo atajo me quedo con las últimas 15 líneas y lo guardo como pie.html. 
 
+Como quiero que desde la parte superior el usuario se pueda dirigir a las diferentes prácticas, modifico la cabecera y el index de esta manera: 
 
+    <li class="nav-item">
+            <a class="nav-link" href="index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+    <li class="nav-item">
+            <a class="nav-link" href="nuevapractica1.html">Práctica 1</a>
+          </li>
+          <li class="nav-item">
+    <li class="nav-item">
+            <a class="nav-link" href="nuevapractica2.html">Práctica 2</a>
+          </li>
+          <li class="nav-item">
+    <li class="nav-item">
+            <a class="nav-link" href="nuevapractica3.html">Práctica 3</a>
+          </li>
+          <li class="nav-item">  
+    <li class="nav-item">
+            <a class="nav-link" href="nuevapractica4.html">Práctica 4</a>
+         </li>
+           <li class="nav-item">
+     <li class="nav-item">
+             <a class="nav-link" href="nuevametodologia.html">Metodología</a>
 
+También edito la línea 44 para que se vea mi nombre en lugar de Fixed Navbar
+    <a class="navbar-brand" href="#">Adela Lobo</a>
+
+En el pie, modifico la línea 6 para introducir un nuevo texto. En este caso yo pondré *Periodismo de datos*. Quedaría de esta manera:
+    <span class="text-muted">Periodismo de datos</span>
+
+Para que la cabecera y el pie estén presentes durante toda la navegación debo concatenar. Para ello introduzco lo siguiente en la terminal:
+
+ - cat cabecera.html practica1.html pie.html > nuevapractica1.html
+ - cat cabecera.html practica2.html pie.html > nuevapractica2.html
+ - cat cabecera.html practica3.html pie.html > nuevapractica3.html
+ - cat cabecera.html practica4.html pie.html > nuevapractica4.html
+
+Para que la página inicial tenga algo de texto, creo un nuevo archivo, al que he llamado inicio.md. En él, explico el contenido de la página web. Una vez terminado el texto lo paso a html con pandoc. Y copio y pego el contenido del nuevo archivo html en el index a partir del container. 
+
+Ya solo me queda la metodología. Cuando termine de redactarla en markdown, le pasaré pandoc y con el comando cat uniré ese archivo con la cabecera y el pie. Guardaré este archivo como nuevametodología.html, que es la referencia que había introducido en la cabecera. 
