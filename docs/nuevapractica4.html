@@ -81,10 +81,8 @@
   <div class="container">
 <h1 id="realización-de-una-visualización-en-datawrapper">Realización de una visualización en <em>Datawrapper</em></h1>
 <p>Esta visualización se ha realizado con una base de datos diferente a la propuesta por el profesor. Se puede consultar dicha dataset en este <a href="https://datos.gob.es/es/catalogo/l01280796-accidentes-de-trafico-con-implicacion-de-bicicletas">enlace</a>. El objetivo de la visualización que he elaborado es localizar geográficamente dónde se producen más accidentes con bicicletas.</p>
-<p>Para consultar la visualización interactiva, haga clic en este <a href="https://datawrapper.dwcdn.net/8z5IG/2/">enlace</a>.</p>
-<figure>
-<img src="imagenes/mapaaccidentes.png" title="mapa con los accidentes con implicación de bicicleta" alt="grafico" /><figcaption aria-hidden="true">grafico</figcaption>
-</figure>
+<iframe title="Accidentes de tráfico que implican a una bicicleta en Madrid " aria-label="Map" id="datawrapper-chart-8z5IG" src="https://datawrapper.dwcdn.net/8z5IG/2/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="691"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();
+</script>
 <h2 id="proceso-de-limpieza-de-datos-en-openrefine">Proceso de limpieza de datos en <em>OpenRefine</em></h2>
 <p>Esta base de datos muestra cada uno de los accidentes de tráfico con implicación de bicicletas en 2018. Cada incidente está detallado con datos de las circunstancias en las que se produjo el accidente, como en qué calle se produjo, la hora, si había granizo en la carretera…</p>
 <p>Como solo nos interesa el distrito, elimino todas las columnas y me quedo únicamente con la columna de los distritos. Ahora, para saber el número exacto de accidentes que ha habido en cada distrito, selecciono la opción <strong>Edit Column</strong> y después <strong>Add column based on this column</strong>. Una vez realizado esto, introduzco <strong>value.facetCount(‘value’,’Distrito’)</strong>. El nombre de la nueva columna es Nº accidentes.</p>
@@ -96,7 +94,7 @@
 <p>Tras terminar estos cambios, el mapa ya muestra los datos correctamente. Con esto, ya esta concluida la visualización.</p>
 <h2 id="comentario-de-la-visualización-obtenida">Comentario de la visualización obtenida</h2>
 <p>Gracias a este mapa se puede visualizar el número de accidentes de tráfico con implicación de una bicicleta en las diferentes zonas de Madrid con tan solo un golpe de vista.</p>
-<p>La elección del azul es acertada ya que, según la teoría del color, el azul evoca seriedad y confianza, que es lo que un medio quiere transmitir a sus lectores. Además, es el mismo color que se utiliza en la cabecera de esta web.</p>
+<p>La elección del azul es acertada ya que, según la teoría del color, el azul evoca seriedad y confianza, que es lo que un medio quiere transmitir a sus lectores.</p>
 <p>Según la tonalidad de azul más oscuro o más clara podemos deducir si el número de accidentes es elevado o alto, respectivamente. El mapa muesta el distrito centro muy oscuro y los distritos del sur más claros. Esto probablemente se deba a que la circulación de bicicletas por el centro de la ciudad es más elevada que en la periferia, lo que produce más accidentes con este medio de transporte.</p>
   </div>
 </main>
